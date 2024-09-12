@@ -130,6 +130,7 @@ export default () => {
    * @param col 列数
    */
   const createTableElement = (row: number, col: number) => {
+    console.log('---createTableElement')
     const style: TableCellStyle = {
       fontname: theme.value.fontName,
       color: theme.value.fontColor,

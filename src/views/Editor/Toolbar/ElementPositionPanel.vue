@@ -70,11 +70,12 @@
           <IconUnlock style="width: 10%;" class="icon-btn" v-tooltip="'宽高比锁定'" @click="updateFixedRatio(true)" v-else />
         </template>
         <div style="width: 10%;" v-else></div>
+        <!-- :disabled="isHorizontalText || handleElement!.type === 'table'"  -->
         <NumberInput 
           :min="minSize"
           :max="800"
           :step="5"
-          :disabled="isHorizontalText || handleElement!.type === 'table'" 
+          
           :value="height" 
           @update:value="value => updateHeight(value)"
           style="width: 45%;"

@@ -53,7 +53,7 @@ const props = defineProps<{
 }>()
 
 const { slides, slideIndex } = storeToRefs(useSlidesStore())
-
+console.log('----slidesWithTurningMode', slides)
 const slidesWithTurningMode = computed(() => {
   return slides.value.map(slide => {
     let turningMode = slide.turningMode

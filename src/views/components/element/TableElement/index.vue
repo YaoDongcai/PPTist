@@ -60,7 +60,7 @@ const props = defineProps<{
   selectElement: (e: MouseEvent | TouchEvent, element: PPTTableElement, canMove?: boolean) => void
   contextmenus: () => ContextmenuItem[] | null
 }>()
-
+console.log('----props', props.elementInfo)
 const mainStore = useMainStore()
 const slidesStore = useSlidesStore()
 const { canvasScale, handleElementId, isScaling } = storeToRefs(mainStore)

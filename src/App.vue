@@ -19,7 +19,7 @@ import Screen from './views/Screen/index.vue'
 import Mobile from './views/Mobile/index.vue'
 
 const _isPC = isPC()
-
+console.log('---isPC', _isPC)
 const mainStore = useMainStore()
 const snapshotStore = useSnapshotStore()
 const { databaseId } = storeToRefs(mainStore)

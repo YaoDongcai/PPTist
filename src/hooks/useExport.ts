@@ -442,7 +442,7 @@ export default () => {
           if (el.opacity !== undefined) options.transparency = (1 - el.opacity) * 100
           if (el.paragraphSpace !== undefined) options.paraSpaceBefore = el.paragraphSpace * PT_PX_RATIO
           if (el.vertical) options.vert = 'eaVert'
-
+          console.log('----pptxSlide.addText', textProps, options )
           pptxSlide.addText(textProps, options)
         }
 
@@ -728,14 +728,16 @@ export default () => {
             }
             if (_row.length) tableData.push(_row)
           }
-
+          
           const options: pptxgen.TableProps = {
             x: el.left / INCH_PX_RATIO,
             y: el.top / INCH_PX_RATIO,
             w: el.width / INCH_PX_RATIO,
             h: el.height / INCH_PX_RATIO,
             colW: el.colWidths.map(item => el.width * item / INCH_PX_RATIO),
+            rowH: el.cellMinHeight / INCH_PX_RATIO || 40 / INCH_PX_RATIO
           }
+          console.log('----el element', el, options)
           if (el.theme) options.fill = { color: '#ffffff' }
           if (el.outline.width && el.outline.color) {
             options.border = {

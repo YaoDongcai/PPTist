@@ -5,7 +5,7 @@ import type { Slide, SlideTheme, PPTElement, PPTAnimation } from '@/types/slides
 import { slides } from '@/mocks/slides'
 import { theme } from '@/mocks/theme'
 import { layouts } from '@/mocks/layout'
-
+console.log('----slides', slides)
 interface RemovePropData {
   id: string
   propName: string | string[]
@@ -159,9 +159,9 @@ export const useSlidesStore = defineStore('slides', {
         deleteSlidesIndex.push(index)
 
         const deletedSlideSection = slides[index].sectionTag
-        if(deletedSlideSection) {
+        if (deletedSlideSection) {
           const handleSlideNext = slides[index + 1]
-          if(handleSlideNext && !handleSlideNext.sectionTag) {
+          if (handleSlideNext && !handleSlideNext.sectionTag) {
             delete slides[index].sectionTag
             slides[index + 1].sectionTag = deletedSlideSection
           }

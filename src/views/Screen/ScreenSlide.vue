@@ -38,7 +38,6 @@ const props = defineProps<{
   turnSlideToId: (id: string) => void
   manualExitFullscreen: () => void
 }>()
-
 const { viewportRatio } = storeToRefs(useSlidesStore())
 
 const background = computed(() => props.slide.background)
