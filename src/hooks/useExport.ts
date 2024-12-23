@@ -591,7 +591,7 @@ export default () => {
             points,
           }
           if (el.shadow) options.shadow = getShadowOption(el.shadow)
-
+          console.log('----options----', options)
           pptxSlide.addShape('custGeom' as pptxgen.ShapeType, options)
         }
 

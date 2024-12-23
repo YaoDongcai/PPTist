@@ -19,7 +19,9 @@ for (let i = 0; i < leftTitle.length; i += 1) {
     fontSize: 12
   }))
 }
-const rightTitle = ['骨性I类；均角，生长方向正常。', '上前牙倾斜度正常，下前牙唇倾', '鼻唇角偏大，唇沟正常，上唇位于E线前1.7mm，下唇位于E线前2.4mm']
+const rightTitle = ['趋向于骨性II类错合；低角型，下颌平面平坦，面高可能偏小，聚合生长型，颏部前突。',
+  '上中切牙相对前颅底平面舌向倾斜，下中切牙相对下颌平面倾斜度正常。', 
+  '鼻底部上翘，上唇倾斜度较小，；上唇位置正常，下唇位置正常。']
 for (let i = 0; i < rightTitle.length; i += 1) {
   textRows.push(setText({
     left: 92,

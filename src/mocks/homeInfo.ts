@@ -39,7 +39,7 @@ rows.push(setText({
   height: 101,
 }, '正畸分析报告', {
   isBold: true,
-  color: '#ffffff',
+  color: '#35CFA8',
   fontSize: 72
 }))
 rows.push(
@@ -50,7 +50,7 @@ rows.push(
     height: 55,
   }, `&nbsp; 刘德华&nbsp;|&nbsp; 男&nbsp;|&nbsp; 56岁&nbsp; |&nbsp;替牙期`, {
     color: '#000000',
-    fill: '#ffffff',
+    fill: '#eeeeee',
     fontSize: 30
   })
 )
@@ -72,8 +72,8 @@ for (let i = 0;i < icons.length; i += 1) {
     'width': 160,
     height: 21,
   }, titles[i], {
-    isBold: true,
-    color: '#ffffff',
+    isBold: false,
+    color: '#000000',
     fontSize: 15
   })
   )
@@ -86,8 +86,8 @@ rows.push(setText({
   'width': 160,
   height: 21,
 }, '*说明:', {
-  isBold: true,
-  color: '#ffffff',
+  isBold: false,
+  color: '#838383',
   fontSize: 10
 }))
 // 更新数据
@@ -100,8 +100,8 @@ for (let i = 0; i < desc.length; i += 1) {
     'width': 900,
     height: 21,
   }, desc[i], {
-    isBold: true,
-    color: '#ffffff',
+    isBold: false,
+    color: '#838383',
     fontSize: 10
   }))
 }
@@ -111,10 +111,6 @@ const homePage = {
   'elements': [
     ...rows
   ],
-  'background': {
-    'type': 'solid',
-    'color': 'rgba(0,115,83,1)'
-  }
 }
 // 第一页
 export default homePage

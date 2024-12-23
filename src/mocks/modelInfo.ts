@@ -22,8 +22,8 @@ const standStyle = {
 // 循环生成4个text 和line 的数据
 const rows = []
 const topArr = [{
-  name: '正面型',
-  desc: '一般'
+  name: '上牙弓牙弓形态',
+  desc: '对称性 和非对称性'
 }, {
   name: '对称性',
   desc: '左下7牙缺失'

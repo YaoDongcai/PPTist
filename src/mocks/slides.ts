@@ -18,5 +18,10 @@ import bonePage from './boneInfo'
 import conclusionPage from './conclusionInfo'
 // standPage, medicalPage, clinicalPage
 export const slides: Slide[] = [
-  homePage, introPage, standPage, medicalPage, clinicalPage, gapPage, boltonPage, laterPage, bonePage, panoPage, conclusionPage, treatmentPage, frontPage, rightPage, modelPage, mouthPage, 
+  introPage
+  // treatmentPage
+  // laterPage
+  // modelPage
+  // bonePage, 
+  // homePage, introPage, standPage, medicalPage, clinicalPage, gapPage, boltonPage, laterPage, bonePage, panoPage, conclusionPage, treatmentPage, frontPage, rightPage, modelPage, mouthPage, 
 ]

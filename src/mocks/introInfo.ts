@@ -69,7 +69,7 @@ rows.push(setText({
   height: 95,
 }, '方案总览', {
   isBold: true,
-  color: '#ffffff',
+  color: '#35CFA8',
   fontSize: 68
 }))
 const titles = [
@@ -90,7 +90,7 @@ for (let i = 0;i < 3; i += 1) {
     height: 49,
   }, `${'0' + (i + 1)}`, {
     isBold: true,
-    color: '#007353',
+    color: '#35CFA8',
     fontSize: 35
   }),
   setText({
@@ -125,7 +125,7 @@ for (let i = 0; i < title1.length; i += 1) {
     'width': 200,
     height: 23,
   }, title1[i], {
-    isBold: true,
+    isBold: false,
     color: '#000000',
     fontSize: 17
   }))
@@ -137,7 +137,7 @@ for (let i = 0; i < title2.length; i += 1) {
     'width': 200,
     height: 23,
   }, title2[i], {
-    isBold: true,
+    isBold: false,
     color: '#000000',
     fontSize: 17
   }))
@@ -149,7 +149,7 @@ for (let i = 0; i < title3.length; i += 1) {
     'width': 200,
     height: 23,
   }, title3[i], {
-    isBold: true,
+    isBold: false,
     color: '#000000',
     fontSize: 17
   }))
@@ -161,11 +161,7 @@ const introPage = {
     //   setTitle('方案总览'),
     
     ...rows
-  ],
-  'background': {
-    'type': 'solid',
-    'color': 'rgba(0,115,83,1)'
-  }
+  ]
 }
 // 第一页
 export default introPage
